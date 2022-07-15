@@ -21,6 +21,7 @@
 <body>
 
          {{-- check admin logged session for every page --}}
+         
    {{-- @if (!Session::has('customer_data'))
    <script>
      console.log("lol");
