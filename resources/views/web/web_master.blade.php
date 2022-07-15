@@ -31,7 +31,7 @@
    @endif --}}
    
    
-    {{-- check admin logged session for every page --}}s
+    {{-- check admin logged session for every page --}}
     
 
 
