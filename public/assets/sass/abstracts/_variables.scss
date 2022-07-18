@@ -13,8 +13,13 @@ $font-xl: 19px;
 $font-xxl: 58px;
 
 //2.COLOR
-$color-brand: #3BB77E;
-$color-brand-dark: #29A56C;
+//$color-brand: #3BB77E;
+$color-brand: #1c1c1c;
+$color-brand-footer:#ffffff;
+$color-social-media-normal:#343434;
+$color-social-meddia-hover:#4d4d4d;
+//$color-brand-dark: #29A56C;
+$color-brand-dark: #000000;
 $color-brand-2: #FDC040;
 $color-primary: #5a97fa;
 $color-secondary: #3e5379;
@@ -24,6 +29,7 @@ $color-success: #81B13D;
 $color-info: #2cc1d8;
 $color-text: #7E7E7E;
 $color-heading: #253D4E;
+$color-heading-footer:#979d9d;
 $color-grey-1: $color-heading;
 $color-grey-2: #242424;
 $color-grey-4: #adadad;
@@ -61,10 +67,12 @@ $box-shadown-3-hover: 20px 20px 54px rgba(0, 0, 0, 0.05);
 
 //4. Border
 $border-color: #ececec;
-$border-color-2: #BCE3C9;
+//$border-color-2: #BCE3C9;
+$border-color-2: #686d6a;
 
 //5. Background
 $background-1: #F2F3F4;
 $background-2: #F4F6FA;
 $background-3: #DEF9EC;
+$background-4: #1d1d1d;
 
