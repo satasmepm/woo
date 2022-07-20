@@ -29,6 +29,33 @@ footer {
     .widget-title{
         color: $color-brand-footer;
     }
+    .newsletter-content {
+         .form-subcriber {
+            input {
+                border-radius: 50px;
+                background-color:$background-4;
+            }
+            button.btn-sm {
+             
+             margin-left: -80px;
+             border-top-left-radius: 0px;
+             border-bottom-left-radius: 0px;
+             border-top-right-radius: 50px;
+             border-bottom-right-radius: 50px;
+             background-color: $color-brand-footer;
+             color:$color-social-media-normal;
+             border: none;
+             text-transform: uppercase;
+             &:hover{
+                background-color: $color-brand-footer !important;
+                color:$color-social-meddia-hover !important;
+             }
+
+            }
+           
+         }
+    }
+
 }
 .newsletter {
 	position: relative;

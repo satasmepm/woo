@@ -6964,6 +6964,22 @@ footer {
       opacity: 0.5; }
   footer .widget-title {
     color: #ffffff; }
+  footer .newsletter-content .form-subcriber input {
+    border-radius: 50px;
+    background-color: #1d1d1d; }
+  footer .newsletter-content .form-subcriber button.btn-sm {
+    margin-left: -80px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #ffffff;
+    color: #343434;
+    border: none;
+    text-transform: uppercase; }
+    footer .newsletter-content .form-subcriber button.btn-sm:hover {
+      background-color: #ffffff !important;
+      color: #4d4d4d !important; }
 
 .newsletter {
   position: relative; }

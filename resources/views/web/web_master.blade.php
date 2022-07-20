@@ -770,7 +770,7 @@
     <section class="section-padding footer-mid">
         <div class="container pt-15 pb-20">
             <div class="row">
-                <div class="col">
+                <div class="col col-sm-12  col-lg-3 col-md-6">
                     <div class="widget-about font-md mb-md-9 mb-lg-9 mb-xl-0">
                         <div class="position-relative newsletter-inner">
                     <div class="newsletter-content">
@@ -789,7 +789,7 @@
                       
                     </div>
                 </div>
-                <div class="footer-link-widget col">
+                <div class="footer-link-widget col col-sm-12 col-xs-12  col-lg-3 col-md-6">
                     <h4 class="widget-title">About Us</h4>
                     <ul class="contact-infor mb-sm-12 mb-md-0">
                             <li><img src="{{ asset('assets/imgs/theme/icons/icon-location.svg') }}" alt="" /><strong>Address: </strong> <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span></li>
@@ -798,7 +798,7 @@
                             <li><img src="{{ asset('assets/imgs/theme/icons/icon-clock.svg') }}" alt="" /><strong>Hours:</strong><span>10:00 - 18:00, Mon - Sat</span></li>
                         </ul>
                 </div>
-                <div class="footer-link-widget col">
+                <div class="footer-link-widget col col-sm-12 col-xs-12 col-md-6 col-lg-3">
                     <h4 class="widget-title">Extras</h4>
                     <ul class="footer-list mb-sm-12 mb-md-0">
                         <li><a href="#">Sign In</a></li>
@@ -811,9 +811,9 @@
                     </ul>
                 </div>
                
-                <div class="footer-link-widget col">
+                <div class="footer-link-widget col col-sm-12 col-xs-12 col-lg-2 col-md-6 ">
                     <h4 class="widget-title">Information</h4>
-                    <ul class="footer-list mb-sm-12 mb-md-0">
+                    <ul class="footer-list mb-md-0">
                         <li><a href="#">Milk & Flavoured Milk</a></li>
                         <li><a href="#">Butter and Margarine</a></li>
                         <li><a href="#">Eggs Substitutes</a></li>
@@ -863,7 +863,7 @@
                 </div>-->
             </div>
            
-            <div class="col-xl-4 col-lg-3 col-md-6 text-end d-none d-md-block">
+            <div class="col-xl-4 col-lg-3 col-md-6  text-end d-none d-md-block">
                <!-- <div class="mobile-social-icon">
                     <h6>Follow Us</h6>
                     <a href="#"><img src="{{ asset('assets/imgs/theme/icons/icon-facebook-white.svg') }}" alt="" /></a>
