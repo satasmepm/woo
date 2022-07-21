@@ -4,13 +4,19 @@
 
    
 
-     <div class="container mt-4 mb-4">
+     {{-- <div class="container mt-4 mb-4">
     @if (session('success'))
       <div class="alert alert-success">
       {{ session('success') }}   
       <h1>lol</h1>
       </div>
         
+    @endif --}}
+    @if ($message = Session::get('item_added_to_cart'))
+   <div class="alert alert-success alert-block">
+    {{-- <button type="button" class="close" data-dismiss="alert">×</button>	 --}}
+    <strong>{{ $message }}</strong>
+   </div>
     @endif
 
     

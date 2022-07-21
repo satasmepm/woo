@@ -4,6 +4,16 @@
 @section('content')
 
 
+
+@if ($message = Session::get('alert'))
+<div class="alert alert-success alert-block">
+	<button type="button" class="close" data-dismiss="alert">×</button>	
+        <strong>{{ $message }}</strong>
+</div>
+@endif
+
+
+
 <div class="container mb-80 mt-50">
     <div class="row">
         <div class="col-lg-8 mb-40">
@@ -172,7 +182,7 @@
                         </tbody>
                     </table>
                 </div>
-                <a href="{{ url('checkout') }}" class="btn mb-20 w-100">Proceed To CheckOut<i class="fi-rs-sign-out ml-15"></i></a>
+                <a id="checkout_button" href="{{ url('verfity_for_checkout') }}" class="btn mb-20 w-100">Proceed To CheckOut<i class="fi-rs-sign-out ml-15"></i></a>
             </div>
         </div>
     </div>
@@ -204,10 +214,20 @@ success: function (data) {
     var count = pro.original.count;
     var total = pro.original.total;
 
+    if(count>0){
+
+        console.log('cart not empty');
+    }
+    else{
+        console.log('cart  empty');
+        document.getElementById("checkout_button").style.display = "none";
+
+    }
+
     _html2+=count;
     _html3+=total;
 
-    console.log(_html3);
+    // console.log(_html3);
     // console.log(count);
 
   
@@ -217,7 +237,7 @@ success: function (data) {
 
     for (var i in pro.original.items) {
       
-        console.log(">>>>>>>>>>>>>> : "+pro.original.items[i].weight);
+        // console.log(">>>>>>>>>>>>>> : "+pro.original.items[i].weight);
         // console.log(">>>>>>>>>>>>>> : "+pro.original[i].total);
        // amount = parseFloat(pro.original[i].price) * parseFloat(pro.original[i].qty);
  
@@ -278,6 +298,17 @@ success: function (data) {
 
 
        
+
+    }
+
+    if(count>0){
+
+      
+    }
+    else{
+   console.log('testing one');
+   _html+='<tr class="pt-30"><td>'+'your cart is empty'+'</td></tr>';
+//    document.getElementById("checkout_button").style.display = "none";
 
     }
 

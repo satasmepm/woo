@@ -19,7 +19,7 @@ class web_customer_login extends Controller
     public function customer_login_check_verify(Request $request){
 
         // dd($request);
-        //  $decrypt= Crypt::decryptString($encrypted);
+        // $decrypt= Crypt::decryptString($encrypted);
 
         $customer = customer::where(['cus_username'=>$request->cus_username ,'cus_password'=>$request->cus_password])->count();
         
@@ -27,14 +27,14 @@ class web_customer_login extends Controller
        
         $customer_data = customer::where(['cus_username'=>$request->cus_username ,'cus_password'=>$request->cus_password])->get();
         session(['customer_data'=>$customer_data]);
-        // return redirect('web/customer/account');
-        return view("web.customer_account");
-    
+       
+        // return view("web.customer_account");
+        return redirect()->back()->with('alert-login-customer', 'you are logged in');
     
        }else{
 
-        return redirect('web/customer/login/check')->with('login_error_customer','check username and password');
-    
+        // return redirect('web/customer/login/check')->with('login_error_customer','check username and password');
+        return redirect()->back()->with('alert-login-customer', 'your username or password incorrect');
      
        }
         
@@ -45,7 +45,7 @@ class web_customer_login extends Controller
     
         session()->forget(['customer_data']);
         return view('web.home');
-        
+        // return "logout";
       }
 
 
@@ -119,6 +119,26 @@ class web_customer_login extends Controller
 
 
 
+
+
+    }
+
+    public function check_login_for_checkout(){
+   
+        if(session()->has('customer_data'))
+     {
+        return view('web.display_checkout');
+
+     }
+     else{
+
+        {
+           
+            // return redirect()->back() ->with('alert', 'you are not logged in. please login');
+              return redirect('web/customer/login/check')->with('alert_checkout', 'you are not logged in. please login for checkout');
+
+         }
+     }
 
 
     }

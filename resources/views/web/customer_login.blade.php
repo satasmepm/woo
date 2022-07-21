@@ -2,6 +2,13 @@
 
 @section('content')
 
+@if ($message = Session::get('alert_checkout'))
+<div class="alert alert-success alert-block">
+    {{-- <button type="button" class="close" data-dismiss="alert">×</button>	 --}}
+        <strong>{{ $message }}</strong>
+</div>
+@endif
+
 
 
 <div class="page-content pt-150 pb-150">
@@ -20,11 +27,12 @@
                                     <p class="mb-30">Don't have an account? <a href="{{ url('web/customer/register') }}">Create here</a></p>
                                 </div>
 
-                                   <div>
-                                    @if (Session::has('login_error'))
-                                    <p class="danger">{{ Session('login_error') }}</p> 
-                                     @endif
-                                   </div>
+                                @if ($message = Session::get('alert-login-customer'))
+                                <div class="alert alert-success alert-block">
+                                    {{-- <button type="button" class="close" data-dismiss="alert">×</button>	 --}}
+                                        <strong>{{ $message }}</strong>
+                                </div>
+                                @endif
 
                                 <form method="post" action="{{ url('web/customer/login/check/verify') }}">
                                     @csrf

@@ -43,8 +43,8 @@ class add_to_cart extends Controller
    
       //  return view('web.web_product',compact('product_data'));
 
-    return view('web.web_product',compact('product_data'))->with('success','Blog succesfully created');
-    // return redirect()->route('/web/products')->with('product_data',$product_data)->with('warning',"Don't Open this link");
+    return view('web.web_product',compact('product_data'))->with('item_added_to_cart','item succesfully created');
+  
 
   }
 
