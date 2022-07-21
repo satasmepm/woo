@@ -258,7 +258,7 @@
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="shop-cart.html">
                                         <img alt="Nest" src="{{ asset('assets/imgs/theme/icons/icon-cart.svg') }}" />
-                                        <span class="pro-count blue">2</span>
+                                        <span id="cart_count" class="pro-count blue"></span>
                                     </a>
                                     <a href="shop-cart.html"><span class="lable">Cart</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -293,7 +293,7 @@
                                                 <h4>Total <span>$4000.00</span></h4>
                                             </div>
                                             <div class="shopping-cart-button">
-                                                <a href="shop-cart.html" class="outline">View cart</a>
+                                                <a href="{{ url('/cart') }}" class="outline">View cart</a>
                                                 <a href="shop-checkout.html">Checkout</a>
                                             </div>
                                         </div>
@@ -1063,6 +1063,59 @@
 <!-- Template  JS -->
 <script src="{{ asset('./assets/js/main.js?v=5.3') }}"></script>
 <script src="{{ asset('./assets/js/shop.js?v=5.3') }}"></script>
+
+
+ {{-- start script for display count of the cart --}}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+ <script>
+
+  var cart_count = document.getElementById('cart_count');
+  var _html5 = '';
+  
+    
+    $.ajax({
+    
+           
+    url: "{{url('cart_json')}}", //this is your uri
+    type: 'get', //this is your method
+    success: function (data) {
+     console.log(data);
+        var pro = JSON.parse(data);
+       
+       
+        var count = pro.original.count;
+        
+        _html5+=count;
+
+        console.log(_html5);
+       
+    
+        cart_count.innerHTML = _html5;
+    }
+
+    // h4.innerHTML = _html3;
+    
+    
+    });
+    
+
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+ {{-- end script for display count of the cart --}}
+
+
 </body>
 
 </html>

@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\add_to_cart;
 use App\Http\Controllers\admin\admin_loginController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\dashboardController;
 use App\Http\Controllers\admin\product_itemController;
+use App\Http\Controllers\admin\shipping_by_country;
 use App\Http\Controllers\admin\Subcategory;
 use App\Http\Controllers\admin\up_del_ProductController;
+use App\Http\Controllers\checkoutController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\productController;
 use App\Http\Controllers\web_customer_account;
@@ -49,6 +52,14 @@ Route::get('web/customer/signout', [web_customer_login::class,'logout']);
 
 Route::get('web/customer/account', [web_customer_account::class,'index']);
 
+
+Route::post('add/to/cart', [add_to_cart::class,'add']);
+Route::get('cart', [add_to_cart::class,'cart']);
+Route::get('cart_json', [add_to_cart::class,'cart_json']);
+Route::get('cart_json_delete/{uid}', [add_to_cart::class,'item_delete']);
+
+Route::get('checkout', [checkoutController::class,'index']);
+
 // route for admin dashboard
 
  
@@ -91,6 +102,24 @@ Route::get('/admin/producthome/edit/{id}',[up_del_ProductController::class,'edit
 Route::put('/admin/producthome/update{id}',[up_del_ProductController::class,'update_product']);
 
 Route::post('/admin/producthome/delete',[up_del_ProductController::class,'delete_product']);
+
+
+// routes for add shipping prices for countries
+Route::get('/admin/country_shipping',[shipping_by_country::class,'index']);
+Route::post('/admin/country_shipping',[shipping_by_country::class,'add']);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

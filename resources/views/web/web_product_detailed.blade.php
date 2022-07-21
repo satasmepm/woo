@@ -14,7 +14,7 @@
                             <!-- MAIN SLIDES -->
                             @foreach ($product_images as $image)
                                 
-                           
+                           {{-- <h1>this is for testing purpose</h1> --}}
                             <div class="product-image-slider">
                                 <figure class="border-radius-10">
                                     <img src=" {{ asset('product_images/'.$image->product_main_img) }}" alt="product image" />
@@ -55,7 +55,7 @@
                                     <div class="product-rate d-inline-block">
                                         <div class="product-rating" style="width: 90%"></div>
                                     </div>
-                                    <span class="font-small ml-5 text-muted"> (322 reviews)</span>
+                                    {{-- <span class="font-small ml-5 text-muted"> (322 reviews)</span> --}}
                                 </div>
                             </div>
                             <div class="clearfix product-price-cover">
@@ -81,16 +81,27 @@
                                 </ul>
                             </div> --}}
                             <div class="detail-extralink mb-50">
+                                <form action="{{ url('add/to/cart') }}" method="post">
+                                    @csrf
                                 <div class="detail-qty border radius">
                                     <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                                    <input type="text" name="quantity" class="qty-val" value="1" min="1">
+                                    
+                                    <input type="number" name="quantity" class="qty-val" value="1" min="1">
                                     <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                                    {{-- <input type="number" name="quantity" id="quantity"  min="1" value="1" max="50"> --}}
+                                    <input type="hidden" name="product_id" value="{{  $product_detailed[0]->id }}" >
+                                    {{-- <input type="hidden" name="product_price" value="{{  $product_detailed[0]->price }}" > --}}
+                                    {{-- use this for customer id --}}
+                                    {{-- <input type="hidden" name=""> --}}
+                               
                                 </div>
                                 <div class="product-extra-link2">
-                                    <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
+                                    <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart </button>
+                                    {{-- <input type="submit" value="add to cart"> --}}
                                     {{-- <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
                                     <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a> --}}
                                 </div>
+                              </form>
                             </div>
                             <div class="font-xs">
                                 <ul class="mr-50 float-start">

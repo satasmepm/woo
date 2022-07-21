@@ -172,9 +172,9 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/admin/product') }}">
+                <a class="nav-link" href="{{ url('/admin/country_shipping') }}">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Product</span></a> 
+                    <span>Shipping</span></a> 
             </li>
 
             <!-- Divider -->

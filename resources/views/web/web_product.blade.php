@@ -5,13 +5,21 @@
    
 
      <div class="container mt-4 mb-4">
+    @if (session('success'))
+      <div class="alert alert-success">
+      {{ session('success') }}   
+      <h1>lol</h1>
+      </div>
+        
+    @endif
+
     
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                 <div class="row product-grid-4">
                   
                   
-                    
+               {{-- <h1>this is testing</h1>      --}}
                @foreach ($product_data as $product)
                    
               
@@ -46,9 +54,9 @@
                                         <span>${{ $product->price }}</span>
                                         
                                     </div>
-                                    <div class="add-cart">
+                                    {{-- <div class="add-cart">
                                         <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
