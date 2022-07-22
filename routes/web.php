@@ -108,8 +108,8 @@ Route::post('/admin/producthome/delete',[up_del_ProductController::class,'delete
 // routes for add shipping prices for countries
 Route::get('/admin/country_shipping',[shipping_by_country::class,'index']);
 Route::post('/admin/country_shipping',[shipping_by_country::class,'add']);
-
-
+Route::post('/admin/country_shipping/delete',[shipping_by_country::class,'delete']);
+Route::post('/admin/country_shipping/edit',[shipping_by_country::class,'edit']);
 
 
 

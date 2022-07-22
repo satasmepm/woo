@@ -20,6 +20,14 @@
     padding: 13px 28px;
     font-size: 16px;
 }
+.btn-slider {
+   color:$color-brand;
+   background-color: $color-brand-footer;
+  &:hover{
+    color:$color-brand-footer;
+	background-color: $color-brand;
+  }
+}
 .btn-sm {
     padding: 8px 18px !important;
     font-size: 12px;
@@ -168,6 +176,16 @@ button.submit, button[type='submit'] {
 			background-image: url(../imgs/theme/btn-brush-bg-3.png);			
 		}
 	}
+	&.btn-slider {
+		color:$color-brand;
+		background-color: $color-brand-footer;
+		border-radius:30px;
+		text-transform:uppercase;
+	   &:hover{
+		 color:$color-brand-footer;
+		 background-color: $color-brand;
+	   }
+	 }
 }
 .comments-area .btn-reply {
 	display: flex !important;
