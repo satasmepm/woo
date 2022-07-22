@@ -255,3 +255,15 @@ input[type=number]:focus,
 		list-style: inside;
 	}
 }
+.promo-banner-header{
+	font-size:60px;
+	color:$color-brand-footer;
+}
+.promo-banner-sub-content{
+	color: $color-brand-footer;
+	font-size: 20px;
+}
+.promo-banner-background {
+	background-size: cover !important;
+	background: url('../imgs/banner/c-banner-re.jpg') no-repeat center
+}

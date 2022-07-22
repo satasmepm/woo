@@ -46,6 +46,22 @@
             opacity: 0.9;
         }
     }
+    &.home-spice-card {
+        .banner-text{
+            h4 {
+                color:$color-brand-footer;
+            }
+        }
+        .btn-xs {
+          background-color: transparent;
+          border-bottom: 4px solid $color-brand-footer;
+          text-transform: uppercase;
+          &:hover{
+            border-bottom: 5px solid $color-brand-footer;
+          }
+        }
+        
+    }
     &.banner-1 {
         .banner-text {
             top: 30%;

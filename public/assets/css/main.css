@@ -419,6 +419,18 @@ input[type=number]:focus,
 .list-insider li {
   list-style: inside; }
 
+.promo-banner-header {
+  font-size: 60px;
+  color: #ffffff; }
+
+.promo-banner-sub-content {
+  color: #ffffff;
+  font-size: 20px; }
+
+.promo-banner-background {
+  background-size: cover !important;
+  background: url("../imgs/banner/c-banner-re.jpg") no-repeat center; }
+
 a,
 button,
 img,
@@ -766,6 +778,13 @@ h5.widget-title {
   padding: 13px 28px;
   font-size: 16px; }
 
+.btn-slider {
+  color: #1c1c1c;
+  background-color: #ffffff; }
+  .btn-slider:hover {
+    color: #ffffff;
+    background-color: #1c1c1c; }
+
 .btn-sm {
   padding: 8px 18px !important;
   font-size: 12px; }
@@ -890,6 +909,14 @@ button.submit, button[type='submit'] {
       background-image: url(../imgs/theme/btn-brush-bg-2.png); }
     .btn.btn-brush.btn-brush-3, .button.btn-brush.btn-brush-3 {
       background-image: url(../imgs/theme/btn-brush-bg-3.png); }
+  .btn.btn-slider, .button.btn-slider {
+    color: #1c1c1c;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-transform: uppercase; }
+    .btn.btn-slider:hover, .button.btn-slider:hover {
+      color: #ffffff;
+      background-color: #1c1c1c; }
 
 .comments-area .btn-reply {
   display: flex !important;
@@ -1918,12 +1945,14 @@ input.qty-val {
     line-height: 1; }
     .nav-tabs .nav-link.active {
       color: #1c1c1c;
-      background-color: #fde1bd; }
+      background-color: #fde1bd;
+      border-bottom: 4px solid #1c1c1c; }
     .nav-tabs .nav-link:hover {
       color: #1c1c1c;
       background-color: #fde1bd;
       transform: translateY(-3px);
-      transition: 0.2s; }
+      transition: 0.2s;
+      border-bottom: 4px solid #1c1c1c; }
     .nav-tabs .nav-link:first-child {
       margin-left: 0 !important;
       padding-left: 0 !important; }
@@ -2518,6 +2547,14 @@ table {
     border-radius: 10px; }
   .banner-img:hover img {
     opacity: 0.9; }
+  .banner-img.home-spice-card .banner-text h4 {
+    color: #ffffff; }
+  .banner-img.home-spice-card .btn-xs {
+    background-color: transparent;
+    border-bottom: 4px solid #ffffff;
+    text-transform: uppercase; }
+    .banner-img.home-spice-card .btn-xs:hover {
+      border-bottom: 5px solid #ffffff; }
   .banner-img.banner-1 .banner-text {
     top: 30%; }
   .banner-img.banner-1.home-3 {

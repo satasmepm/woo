@@ -9,7 +9,7 @@
         margin-left: 10px;
         color: #444;
         border-radius: 4px;
-        padding: 15px 24px;
+        padding:  15px 24px ;
         -webkit-transition: 0.2s;
         transition: 0.2s;
         border: 0;
@@ -23,12 +23,14 @@
         &.active {
            color: $color-brand;
            background-color: #fde1bd;
+           border-bottom: 4px solid $color-brand;
         }
         &:hover {
             color: $color-brand;
             background-color: #fde1bd;
             transform: translateY(-3px);
             transition: 0.2s;
+            border-bottom: 4px solid $color-brand;
          }
 
         &:first-child {margin-left: 0 !important;padding-left: 0 !important;}

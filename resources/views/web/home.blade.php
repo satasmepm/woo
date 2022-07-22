@@ -9,39 +9,25 @@
         <section class="home-slider position-relative mb-30">
             <div class="home-slide-cover">
                 <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                    <div class="single-hero-slider rectangle single-animation-wrap" style="background-image: url(assets/imgs/slider/slider-5.png)">
-                        <div class="slider-content">
-                            <div class="row">
-                                <div class="col-md-9 col-lg-9 col-sm-12">
-                                <h1 class="display-2 mb-40">
-                                Don’t miss<br />
-                                amazing deals
-                            </h1>
-                                </div> 
-                                <div class="col-md-3 col-lg-3 col-sm-12">
-                                  
-                                </div>
-                            </div>
-
-                          
-                            <p class="mb-65">Sign up for the daily newsletter</p>
-                            <form class="form-subcriber d-flex">
-                                <input type="email" placeholder="Your emaill address" />
-                                <button class="btn" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="single-hero-slider rectangle single-animation-wrap" style="background-image: url(assets/imgs/slider/slider-6.png)">
+                    
+                    <div class="single-hero-slider rectangle single-animation-wrap" style="background-image: url(assets/imgs/slider/slider.jpg)">
                         <div class="slider-content">
                             <h1 class="display-2 mb-40">
                                 Fresh Vegetables<br />
                                 Big discount
                             </h1>
                             <p class="mb-65">Save up to 50% off on your first order</p>
-                            <form class="form-subcriber d-flex">
-                                <input type="email" placeholder="Your emaill address" />
-                                <button class="btn" type="submit">Subscribe</button>
-                            </form>
+                            <a href="#" class="btn btn-slider"> Shop now </a>
+                        </div>
+                    </div>
+                    <div class="single-hero-slider rectangle single-animation-wrap" style="background-image: url(assets/imgs/slider/slider.jpg)">
+                        <div class="slider-content">
+                            <h1 class="display-2 mb-40">
+                                Fresh Vegetables<br />
+                                Big discount
+                            </h1>
+                            <p class="mb-65">Save up to 50% off on your first order</p>
+                            <a href="#" class="btn btn-slider"> Shop now </a>
                         </div>
                     </div>
                 </div>
@@ -55,34 +41,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
-                            <img src="assets/imgs/banner/banner-1.png" alt="" />
+                        <div class="banner-img home-spice-card wow animate__animated animate__fadeInUp" data-wow-delay="0">
+                            <img src="assets/imgs/banner/tumeric.jpg" alt="" />
                             <div class="banner-text">
                                 <h4>
-                                    Everyday Fresh & <br />Clean with Our<br />
-                                    Products
-                                </h4>
+                                    Turmeric <br /> Powder <br />
+                                    
+                                </h4>s
                                 <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                            <img src="assets/imgs/banner/banner-2.png" alt="" />
+                        <div class="banner-img home-spice-card wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <img src="assets/imgs/banner/curry.jpg" alt="" />
                             <div class="banner-text">
                                 <h4>
-                                    Make your Breakfast<br />
-                                    Healthy and Easy
+                                    Curry<br />
+                                    Powder
                                 </h4>
                                 <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 d-md-none d-lg-flex">
-                        <div class="banner-img mb-sm-0 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-                            <img src="assets/imgs/banner/banner-3.png" alt="" />
+                        <div class="banner-img home-spice-card mb-sm-0 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                            <img src="assets/imgs/banner/chilli.jpg" alt="" />
                             <div class="banner-text">
-                                <h4>The best Organic <br />Products Online</h4>
+                                <h4>Chilli <br /> Powder </h4>
                                 <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
@@ -91,7 +77,7 @@
             </div>
         </section>
         <!--End banners-->
-        <section class="popular-categories section-padding">
+    <!--    <section class="popular-categories section-padding">
             <div class="container">
                 <div class="section-title">
                     <div class="title">
@@ -193,7 +179,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!--End category slider-->
         <section class="featured section-padding">
         <div class="container">
@@ -539,38 +525,27 @@
               
             </div>
         </section>
-
-        <section class="newsletter mb-15">
+        <section class="wow animate__animated animate__fadeIn promo-banner-background" >
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="position-relative newsletter-inner">
-                            
-                            <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
-                             
-                        </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 mt-30 mb-30 d-flex justify-content-center" >
+                        <img src="assets/imgs/banner/chilli-packet-with-shadow.png" style="width:50%;" alt="newsletter" class="img-thumb ml-50" />
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 mt-30 mb-30 ml-10  ">
                         <div class="position-relative newsletter-inner">
-                            
-                            <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
                             <div class="newsletter-content">
-                                <h2 class="mb-20">
-                                    Stay home & get your daily <br />
-                                    needs from our shop
-                                </h2>
-                                <p class="mb-45">Start You'r Daily Shopping with <span class="text-brand">Nest Mart</span></p>
-                                <form class="form-subcriber d-flex">
-                                    <input type="email" placeholder="Your emaill address" />
-                                    <button class="btn" type="submit">Subscribe</button>
-                                </form>
+                                <h2 class="mb-20 mt-100 promo-banner-header">
+                                    SAVE 40% OFF </h2>
+                                <p class="mb-45 promo-banner-sub-content">Chill Powder, Always Fresh and Delicios. <br/> 100% Organic</p>
+                                <a href="#" class="btn btn-slider"> Shop now </a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+       
         <div class="container mb-30">
             <div class="row">
                 <div class="col-lg-5-5">
