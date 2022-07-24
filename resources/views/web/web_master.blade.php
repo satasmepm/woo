@@ -198,7 +198,7 @@
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo logo-width-1">
-                        <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo.svg') }}" alt="logo" /></a>
+                        <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo-evspices.png') }}" alt="logo" /></a>
                     </div>
                     <div class="header-right">
                     <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
@@ -220,7 +220,7 @@
                                         <a href="page-about.html">About</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/web/products') }}">Product </a>
+                                        <a href="{{ url('/web/products') }}">Our Products </a>
                                         {{-- <ul class="sub-menu">
                                             <li><a href="shop-grid-right.html">Shop Grid – Right Sidebar</a></li>
                                             <li><a href="shop-grid-left.html">Shop Grid – Left Sidebar</a></li>
@@ -255,7 +255,7 @@
                                         </ul> --}}
                                     </li>
                                     <li>
-                                        <a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
+                                        <a href="#">Shop <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="vendors-grid.html">Vendors Grid</a></li>
                                             <li><a href="vendors-list.html">Vendors List</a></li>
@@ -265,70 +265,9 @@
                                             <li><a href="vendor-guide.html">Vendor Guide</a></li>
                                         </ul>
                                     </li>
-                                    <li class="position-static">
-                                        <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="mega-menu">
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Fruit & Vegetables</a>
-                                                <ul>
-                                                    <li><a href="shop-product-right.html">Meat & Poultry</a></li>
-                                                    <li><a href="shop-product-right.html">Fresh Vegetables</a></li>
-                                                    <li><a href="shop-product-right.html">Herbs & Seasonings</a></li>
-                                                    <li><a href="shop-product-right.html">Cuts & Sprouts</a></li>
-                                                    <li><a href="shop-product-right.html">Exotic Fruits & Veggies</a></li>
-                                                    <li><a href="shop-product-right.html">Packaged Produce</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Breakfast & Dairy</a>
-                                                <ul>
-                                                    <li><a href="shop-product-right.html">Milk & Flavoured Milk</a></li>
-                                                    <li><a href="shop-product-right.html">Butter and Margarine</a></li>
-                                                    <li><a href="shop-product-right.html">Eggs Substitutes</a></li>
-                                                    <li><a href="shop-product-right.html">Marmalades</a></li>
-                                                    <li><a href="shop-product-right.html">Sour Cream</a></li>
-                                                    <li><a href="shop-product-right.html">Cheese</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Meat & Seafood</a>
-                                                <ul>
-                                                    <li><a href="shop-product-right.html">Breakfast Sausage</a></li>
-                                                    <li><a href="shop-product-right.html">Dinner Sausage</a></li>
-                                                    <li><a href="shop-product-right.html">Chicken</a></li>
-                                                    <li><a href="shop-product-right.html">Sliced Deli Meat</a></li>
-                                                    <li><a href="shop-product-right.html">Wild Caught Fillets</a></li>
-                                                    <li><a href="shop-product-right.html">Crab and Shellfish</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-34">
-                                                <div class="menu-banner-wrap">
-                                                    <a href="shop-product-right.html"><img src="{{ asset('assets/imgs/banner/banner-menu.png') }}" alt="Nest" /></a>
-                                                    <div class="menu-banner-content">
-                                                        <h4>Hot deals</h4>
-                                                        <h3>
-                                                            Don't miss<br />
-                                                            Trending
-                                                        </h3>
-                                                        <div class="menu-banner-price">
-                                                            <span class="new-price text-success">Save to 50%</span>
-                                                        </div>
-                                                        <div class="menu-banner-btn">
-                                                            <a href="shop-product-right.html">Shop now</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-banner-discount">
-                                                        <h3>
-                                                            <span>25%</span>
-                                                            off
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                   
                                     <li>
-                                        <a href="blog-category-grid.html">Blog <i class="fi-rs-angle-down"></i></a>
+                                        <a href="blog-category-grid.html">Deals <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="blog-category-grid.html">Blog Category Grid</a></li>
                                             <li><a href="blog-category-list.html">Blog Category List</a></li>
@@ -344,24 +283,9 @@
                                             </li>
                                         </ul>
                                     </li>
+                                  
                                     <li>
-                                        <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="page-about.html">About Us</a></li>
-                                            <li><a href="page-contact.html">Contact</a></li>
-                                            <li><a href="page-account.html">My Account</a></li>
-                                            <li><a href="page-login.html">Login</a></li>
-                                            <li><a href="page-register.html">Register</a></li>
-                                            <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                            <li><a href="page-reset-password.html">Reset password</a></li>
-                                            <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
-                                            <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="page-terms.html">Terms of Service</a></li>
-                                            <li><a href="page-404.html">404 Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="page-contact.html">Contact</a>
+                                        <a href="page-contact.html">Contact us</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -481,7 +405,7 @@
             <div class="container">
                 <div class="header-wrap header-space-between position-relative">
                     <div class="logo logo-width-1 d-block d-lg-none">
-                        <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo.svg') }}" alt="logo" /></a>
+                        <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo-evspices.png') }}" alt="logo" /></a>
                     </div>
                     
                   
@@ -554,7 +478,7 @@
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
                 <div class="mobile-header-logo">
-                    <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo.svg') }}" alt="logo" /></a>
+                    <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo-evspices.png') }}" alt="logo" /></a>
                 </div>
                 <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                     <button class="close-style search-close">
@@ -773,11 +697,12 @@
                 <div class="col col-sm-12  col-lg-3 col-md-6">
                     <div class="widget-about font-md mb-md-9 mb-lg-9 mb-xl-0">
                         <div class="position-relative newsletter-inner">
+                        <div class="logo mb-30">
+                            <a href="index.html" class="mb-15"><img src="{{ asset('assets/imgs/theme/logo-invert.png') }}" alt="logo" /></a>
+                            
+                        </div>
                     <div class="newsletter-content">
-                                <h4 class="mb-20 widget-title">
-                                    LET'S KEEP IN TOUCH <br />
-                                </h2>
-                                <p class="mb-45">Sign up for our email to get latest news </p>
+                              
                                 <form class="form-subcriber d-flex">
                                     <input type="email" placeholder="Your emaill address" />
                                     <button class="btn btn-sm" type="submit">Subscribe</button>
@@ -789,17 +714,9 @@
                       
                     </div>
                 </div>
-                <div class="footer-link-widget col col-sm-12 col-xs-12  col-lg-3 col-md-6">
-                    <h4 class="widget-title">About Us</h4>
-                    <ul class="contact-infor mb-sm-12 mb-md-0">
-                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-location.svg') }}" alt="" /><strong>Address: </strong> <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span></li>
-                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-contact.svg') }}" alt="" /><strong>Call Us:</strong><span>(+91) - 540-025-124553</span></li>
-                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-email-2.svg') }}" alt="" /><strong>Email:</strong><span>sale@Nest.com</span></li>
-                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-clock.svg') }}" alt="" /><strong>Hours:</strong><span>10:00 - 18:00, Mon - Sat</span></li>
-                        </ul>
-                </div>
+              
                 <div class="footer-link-widget col col-sm-12 col-xs-12 col-md-6 col-lg-3">
-                    <h4 class="widget-title">Extras</h4>
+                    <h4 class="widget-title">Quick Links</h4>
                     <ul class="footer-list mb-sm-12 mb-md-0">
                         <li><a href="#">Sign In</a></li>
                         <li><a href="#">View Cart</a></li>
@@ -812,16 +729,21 @@
                 </div>
                
                 <div class="footer-link-widget col col-sm-12 col-xs-12 col-lg-2 col-md-6 ">
-                    <h4 class="widget-title">Information</h4>
-                    <ul class="footer-list mb-md-0">
-                        <li><a href="#">Milk & Flavoured Milk</a></li>
-                        <li><a href="#">Butter and Margarine</a></li>
-                        <li><a href="#">Eggs Substitutes</a></li>
-                        <li><a href="#">Marmalades</a></li>
-                        <li><a href="#">Sour Cream and Dips</a></li>
-                        <li><a href="#">Tea & Kombucha</a></li>
-                        <li><a href="#">Cheese</a></li>
-                    </ul>
+                    <h4 class="widget-title">Location</h4>
+                     <div class="border-radius-15 overflow-hidden">
+                    <div id="map-panes" class="leaflet-map"></div>
+                </div>
+                    
+                </div>
+                <div class="footer-link-widget col col-sm-12 col-xs-12  col-lg-3 col-md-6">
+                    <h4 class="widget-title">Contact Us</h4>
+                    <ul class="contact-infor mb-sm-12 mb-md-0">
+                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-location.svg') }}" alt="" /><strong>Address: </strong> <span>#4 , Menikpalahena , Naimbala2 , Thihagoda (81280) , Sri Lanka.</span></li>
+                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-contact.svg') }}" alt="" /><strong>Call Us:</strong><span>(+94) 70 160 007</span></li>
+                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-email-2.svg') }}" alt="" /><strong>Email:</strong><span>everspiceceylon@gmail.com</span></li>
+                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-email-2.svg') }}" alt="" /><strong>Web:</strong><span>www.everspiceceylon.com</span></li>
+                            <li><img src="{{ asset('assets/imgs/theme/icons/icon-clock.svg') }}" alt="" /><strong>Hours:</strong><span>10:00 - 18:00, Mon - Sat</span></li>
+                        </ul>
                 </div>
                 <!--<div class="footer-link-widget widget-install-app col">
                     <h4 class="widget-title">Install App</h4>
