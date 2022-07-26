@@ -216,6 +216,14 @@
                                             <li><a href="index-6.html">Home 6</a></li>
                                         </ul> --}}
                                     </li>
+
+                                    <li>
+                                        <a  href="{{ url('/') }}">Dealz</a>
+                                    </li>
+
+
+
+
                                     <li>
                                         <a href="page-about.html">About</a>
                                     </li>

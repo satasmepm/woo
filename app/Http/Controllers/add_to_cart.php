@@ -68,7 +68,7 @@ class add_to_cart extends Controller
    $items= Cart::info();
 
 
-  return json_encode($items);
+   return json_encode($items);
 
   }
 

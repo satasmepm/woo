@@ -2,7 +2,7 @@
 @section('content')
 
 
-<h1>hello view products</h1>
+
 <div class=" container-fluid">
 
     <a href="{{ url('/admin/product') }}"  class=" m-2 btn btn-success">Add new product</a>
@@ -12,8 +12,8 @@
 
 
 
-<div >
-<table id="view_product" class="display nowrap" style="width:100%">
+<div style="height: 600px;overflow: scroll;">
+<table id="view_product" class="display nowrap table table-dark" style="width:100%">
 
     <thead>
         <tr>
@@ -132,7 +132,12 @@ $(document).ready(function() {
 
     $(document).ready(function() {
     $('#view_product').DataTable();
-} );
+
+    // "scrollX": true
+
+
+
+});
    
 });
  

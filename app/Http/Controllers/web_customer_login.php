@@ -44,7 +44,28 @@ class web_customer_login extends Controller
    
     
         session()->forget(['customer_data']);
-        return view('web.home');
+
+        $new_arrival =  DB::table('products')
+        ->join('category','products.cat_id','=','category.id')
+        ->join('subcategory','products.subcat_id','=','subcategory.id')
+        ->join('create_product_image_tables','products.id','=','create_product_image_tables.product_id')
+        ->select('products.*','category.Cat_name','subcategory.sub_name','create_product_image_tables.product_main_img','create_product_image_tables.product_sub_img1','create_product_image_tables.product_sub_img2','create_product_image_tables.product_sub_img3','create_product_image_tables.product_sub_img4')
+        ->orderBy('products.id', 'desc')
+        ->limit(2)
+        ->get();
+  
+  
+        $products =  DB::table('products')
+        ->join('category','products.cat_id','=','category.id')
+        ->join('subcategory','products.subcat_id','=','subcategory.id')
+        ->join('create_product_image_tables','products.id','=','create_product_image_tables.product_id')
+        ->select('products.*','category.Cat_name','subcategory.sub_name','create_product_image_tables.product_main_img','create_product_image_tables.product_sub_img1','create_product_image_tables.product_sub_img2','create_product_image_tables.product_sub_img3','create_product_image_tables.product_sub_img4')
+        ->get();
+        
+  
+        //  dd($product_data);
+        return view('web.home',compact(['new_arrival','products']));   
+        // return view('web.home');
         // return "logout";
       }
 
@@ -123,23 +144,23 @@ class web_customer_login extends Controller
 
     }
 
-    public function check_login_for_checkout(){
+    // public function check_login_for_checkout(){
    
-        if(session()->has('customer_data'))
-     {
-        return view('web.display_checkout');
+    //     if(session()->has('customer_data'))
+    //  {
+    //     return view('web.display_checkout');
 
-     }
-     else{
+    //  }
+    //  else{
 
-        {
+    //     {
            
-            // return redirect()->back() ->with('alert', 'you are not logged in. please login');
-              return redirect('web/customer/login/check')->with('alert_checkout', 'you are not logged in. please login for checkout');
+    //         // return redirect()->back() ->with('alert', 'you are not logged in. please login');
+    //           return redirect('web/customer/login/check')->with('alert_checkout', 'you are not logged in. please login for checkout');
 
-         }
-     }
+    //      }
+    //  }
 
 
-    }
+    // }
 }

@@ -49,8 +49,8 @@ Route::post('web/customer/login/check/verify', [web_customer_login::class,'custo
 Route::get('web/customer/register', [web_customer_login::class,'customer_register_view']);
 Route::post('web/customer/register/new', [web_customer_login::class,'customer_register_new']);
 Route::get('web/customer/signout', [web_customer_login::class,'logout']);
-Route::get('verfity_for_checkout', [web_customer_login::class,'check_login_for_checkout']);
-
+// Route::get('verfity_for_checkout', [web_customer_login::class,'check_login_for_checkout']);
+Route::get('verfity_for_checkout', [checkoutController::class,'check_login_for_checkout']);
 Route::get('web/customer/account', [web_customer_account::class,'index']);
 
 
