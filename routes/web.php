@@ -9,6 +9,7 @@ use App\Http\Controllers\admin\shipping_by_country;
 use App\Http\Controllers\admin\Subcategory;
 use App\Http\Controllers\admin\up_del_ProductController;
 use App\Http\Controllers\checkoutController;
+use App\Http\Controllers\dealzController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\productController;
 use App\Http\Controllers\web_customer_account;
@@ -41,6 +42,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [homeController::class,'index']);
 Route::get('/web/products', [web_product_controller::class,'index']);
 Route::get('/web/products/detailed/{id}', [web_product_detailed::class,'index']);
+
+
+// route for dealz
+Route::get('/web/delaz', [dealzController::class,'index']);
+
+
 
 
 

@@ -218,7 +218,7 @@
                                     </li>
 
                                     <li>
-                                        <a  href="{{ url('/') }}">Dealz</a>
+                                        <a  href="{{ url('/web/delaz') }}">Dealz</a>
                                     </li>
 
 

@@ -51,15 +51,35 @@
                             {{-- <span class="stock-status out-stock"> Sale Off </span> --}}
                             <h2 class="title-detail">{{ $product_detailed[0]->product_name }}</h2>
                             <div class="product-detail-rating">
-                                <div class="product-rate-cover text-end">
+                                {{-- <div class="product-rate-cover text-end">
                                     <div class="product-rate d-inline-block">
                                         <div class="product-rating" style="width: 90%"></div>
                                     </div>
-                                    {{-- <span class="font-small ml-5 text-muted"> (322 reviews)</span> --}}
-                                </div>
+                                 
+                                </div> --}}
                             </div>
+
+                         
+                            @if ($product_detailed[0]->discount > 0)
+
                             <div class="clearfix product-price-cover">
                                 <div class="product-price primary-color float-left">
+                                   
+                                    <span class="current-price text-brand">${{ $product_detailed[0]->price - (($product_detailed[0]->discount/100) * $product_detailed[0]->price ) }}</span>
+
+                                    <span class="old-price text-muted text-brand">${{  $product_detailed[0]->price  }}</span>
+                                    {{-- <span>
+                                        <span class="save-price font-md color3 ml-15">26% Off</span>
+                                        <span class="old-price font-md ml-15">$52</span>
+                                    </span> --}}
+                                </div>
+                            </div>
+
+                            @else
+
+                            <div class="clearfix product-price-cover">
+                                <div class="product-price primary-color float-left">
+                                    {{-- <h2>lol</h2> --}}
                                     <span class="current-price text-brand">${{ $product_detailed[0]->price }}</span>
                                     {{-- <span>
                                         <span class="save-price font-md color3 ml-15">26% Off</span>
@@ -67,9 +87,19 @@
                                     </span> --}}
                                 </div>
                             </div>
-                            <div class="short-desc mb-30">
+
+
+                                
+                            @endif
+
+                          
+
+
+
+
+                            {{-- <div class="short-desc mb-30">
                                 <p class="font-lg">{{ $product_detailed[0]->description }}</p>
-                            </div>
+                            </div> --}}
                             {{-- <div class="attr-detail attr-size mb-30">
                                 <strong class="mr-10">Size / Weight: </strong>
                                 <ul class="list-filter size-filter font-small">
